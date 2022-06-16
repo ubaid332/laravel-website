@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Http\Controllers\AdminController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +27,5 @@ require __DIR__.'/auth.php';
 // Admin All Routes
 
 Route::controller(AdminController::class)->group(function(){
-    Route::get('logout');
+    Route::get('admin/logout', 'destroy')->name('admin.logout');
 });
