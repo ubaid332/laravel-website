@@ -11,7 +11,7 @@
                         
                         <h4 class="card-title">Edit Profile</h4>
                         <hr>
-                        <form>
+                        <form method="post" action="{{ route('store.profile') }}" enctype="multipart/form-data">
                         <div class="row mb-3">
                             <label for="example-text-input" class="col-sm-2 col-form-label">Name</label>
                             <div class="col-sm-10">
